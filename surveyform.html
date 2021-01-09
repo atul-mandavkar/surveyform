@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <main>
+    <div id="back">
+    <div id="title_content">
+        <h1 id="title">freecodecamp survey form</h1>
+        <p id="description">Thank you for takinng the time to help us improve the platform</p>
+    </div>
+    <div id="form_content">
+        <form id="survey-form" action="" method="post" target="_blank">
+            <label for="name-label">Name<br>
+              <input type="text" name="name" placeholder="Johnny Depp" id="name" class="form1" required>
+            </label>
+            <label for="email-label">Email<br>
+              <input type="email" name="email" placeholder="johnnyDepp@gmial.com" pattern="[a-zA-Z0-9]+@[a-zA-Z.-]+\.[a-z]{2,}$" id="email" class="form1" required>
+            </label>
+            <label for="number-label">Age<br>
+              <input type="number" name="age" placeholder="25" pattern="[0-9]" min="12" max="49" id="number" class="form1">
+            </label>
+            <label for="dropdown">Your current role<br>
+              <select name="role" id="dropdown" class="form1">
+                  <option value="Student">Student</option>
+                  <option value="Full time job">Full time job</option>
+                  <option value="Full time learner">Full time learner</option>
+                  <option value="Not to say">Not to say</option>
+                  <option value="Others">Others</option>
+              </select>
+            </label>
+            <p id="radio1">Select your gender<br></p>
+            <label for="male">Male
+              <input type="radio" name="gender" value="male" id="male" checked>
+            </label>
+            <label for="female">Female
+              <input type="radio" name="gender" value="female" id="female">
+            </label>
+            <p id="radio2">Would you recommend codefreecamp to friends?</p>
+            <label for-"definately">
+              <input type="radio" name="recommend" value="definately" id="definately"> Definately
+            </label><br>
+            <label for="maybe">
+              <input type="radio" name="recommend" value="maybe" id="maybe"> Maybe
+            </label><br>
+            <label for="not-sure">
+              <input type="radio" name="recommend" value="not sure" id="not-sure"> Not sure
+            </label>
+            <p id="improve">What would you like to see improved?</p>
+            <label for="front-end">
+              <input type="checkbox" name="box1" value="front-end" id="box1"> front-end project
+            </label><br>
+            <label for="back-end">
+              <input type="checkbox" name="box2" value="back-end" id="box2"> back-end project
+            </label><br>
+            <label for="challenges">
+              <input type="checkbox" name="box3" value="challenges" id="box3"> challenges
+            </label><br>
+            <label for="video">
+              <input type="checkbox" name="box4" value="video" id="box4"> video
+            </label><br>
+            <label for="forum">
+              <input type="checkbox" name="bpx5" value="forum" id="box5"> forum
+            </label><br>
+            <label for="additional-courses">
+              <input type="checkbox" name="box6" value="additional-courses" id="box6"> additional courses
+            </label>
+            <p id="comments">Any additional comments or suggestions?</p>
+            <label for="textares">
+              <textarea id="textareas">Enter your comment here</textarea>
+            </label>
+  
+            <button type="submit" form="survey=form" value="submit" id="button1">submit</button>
+        </form>
+    </div>
+
+
+
+    </div>
+</main>
+<style>
+  main{
+      background-image: url("https://imgk.timesnownews.com/story/coding.jpg?tr=w-1200,h-900");
+     width: 100%;
+      height: auto;
+      text-align: center;
+  }
+  #back{
+      background-color: rgba(0,0,0,0.7);
+      width: 100%;
+      height: auto;
+  }
+  #title_content{
+      color: white;
+  }
+  #title{
+      font-size: 40px;
+  }
+  #description{
+      font-size: 20px;
+      font-style: italic;
+  }
+  #form_content{
+      width: 60%;
+      height: auto;
+      background-color: blue;
+      margin: auto;
+      text-align: left;
+      color: white;
+      padding: 30px;
+    }
+  #survey-form{
+      width: 90%;
+      height: auto;
+      margin: auto;
+      font-size: 24px;
+  }
+  .form1{
+      width: 95%;
+      height: auto;
+      margin: 10px 10px 30px 0px;
+      line-height: 30px;
+  }
+  #name{
+      line-height: 30px;
+      font-size: 30px;
+  }
+  #email{
+      font-size: 30px;
+  }
+  #number{
+      font-size: 30px;
+  }
+  #dropdown{
+      font-size: 30px;
+  }
+  textarea{
+      width: 100%;
+      height: 100px;
+      font-size: 30px;
+  }
+  #button1{
+      width: 100%;
+      height: 50px;
+      margin: 20px 0px;
+      background-color: green;
+      color: white;
+      font-size: 30px;
+  }
+
+  input:invalid{
+      background-color: red;
+  }
+  input:invalid:required{
+      background: linear-gradient(to right,orange,red);
+  }
+  input:valid{
+      background-color: white;
+  }
+</style>
+<script>
+  /*function myFunction()
+  {
+      // for email id
+
+      if(document.getElementById("email").validity.patternMismatch)
+       {
+           document.getElementById("email").validationMessage;
+       }
+
+      // for number tag
+       if(document.getElementById("number").validity.rangeUnderflow)
+        { 
+      document.getElementById("number").validationMessage;
+        }
+      if(document.getElementById("number").validity.rangeOverflow)
+        { 
+      document.getElementById("number").validationMessage;
+        }
+
+  }*/
+</script>
+</body>
+</html>
